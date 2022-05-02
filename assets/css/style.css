@@ -19,4 +19,28 @@
     --eerie-black-2: hsl(0, 0%, 7%);
     --rich-black-fogra-39: hsl(0, 0%, 2%);
 
+    
+ /* fonts and typography  */
+    
+    
+    --ff-roboto: "Roboto",
+    sans-serif;
+    
+    --fs-1: 32px;
+    --fs-2: 20px;
+    --fs-3: 19px;
+    --fs-4: 18px;
+    --fs-5: 16px;
+    --fs-6: 15px;
+    --fs-7: 14px;
+    --fs-8: 13px;
+    --fs-9: 12px;
+    --fs-10: 11px;
+    
+    --fw-500: 500;
+    --fw-700: 700;
+    
+/* fixed transition value */
+    
+    --transition: 0.15s ease-in-out;
 }
