@@ -345,3 +345,93 @@ header .container {
     background: var(--golden-puppy);
     color: var(--black);
 }
+.add-to-whishlist {
+    background: var(--eerie-black-1);
+    color: var(--white);
+}
+
+.add-to-whishlist.active {
+    color: var(--red-crayola);
+}
+
+.add-to-whishlist:is(:hover, :focus) {
+    --white: hsl(0, 0%, 80%);
+}
+
+.explore-service-btn {
+    background: var(--golden-puppy);
+    color: var(--black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: var(--fs-7);
+    text-transform: capitalize;
+    padding: 8px 16px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.service-card:is(:hover, :focus) .place-service-btn,
+.place-service-btn:focus {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.service-title {
+    margin-bottom: 15px;
+}
+
+.service-card:is(:hover, :focus) .service-title {
+    color: var(--red-crayola);
+}
+
+.service-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.service-author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-img {
+    background: var(--black);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author-username,
+.service-price .label {
+    color: inherit;
+    font-size: var(--fs-8);
+}
+
+.author-username:is(:hover, :focus) {
+    color: var(--golden-puppy);
+}
+
+.service-price data {
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+}
+
+.service-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-8);
+}
+
+.tag {
+    background: var(--golden-puppy);
+    color: var(--black);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
