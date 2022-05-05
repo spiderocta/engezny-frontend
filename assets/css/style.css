@@ -373,7 +373,7 @@ header .container {
     transition: var(--transition);
 }
 
-.service-card:is(:hover, :focus) .place-service-btn,
+.service-card:is(:hover, :focus) .explore-service-btn,
 .place-service-btn:focus {
     transform: translate(-50%, -50%);
     opacity: 1;
