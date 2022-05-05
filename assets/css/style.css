@@ -435,3 +435,98 @@ header .container {
     padding: 4px 10px;
     border-radius: 4px;
 }
+
+/* getting started  */
+
+.getting-started {
+    padding: 60px 0;
+}
+
+.getting-started-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.getting-started-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 0 10px;
+}
+
+.getting-started-item {
+    background: var(--eerie-black-2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.getting-started-card {
+    position: relative;
+    padding: 30px 10px 20px;
+    border: 1px solid var(--onyx-1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.getting-started-card::before,
+.getting-started-card::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: var(--sonic-silver);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.getting-started-card::before {
+    width: 3px;
+    height: 100px;
+}
+
+.getting-started-card::after {
+    width: 100px;
+    height: 3px;
+}
+
+.getting-started-item:hover .getting-started-card::before,
+.getting-started-item:hover .getting-started-card::after {
+    background: var(--golden-puppy);
+}
+
+.getting-started-card .card-number {
+    position: absolute;
+    background: var(--eerie-black-1);
+    color: var(--onyx-2);
+    top: -15px;
+    left: -15px;
+    padding: 5px 15px;
+    font-size: 24px;
+    font-weight: var(--fw-700);
+    border-top-left-radius: 18px;
+    border: 14px solid var(--eerie-black-2);
+}
+
+.card-icon {
+    width: max-content;
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+
+.card-icon img{
+    width: 55px;
+    height: 55px;
+}
+.getting-started-card-title {
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+.getting-started-item:hover .getting-started-card-title {
+    color: var(--golden-puppy);
+}
+
+.getting-started-card-text {
+    font-size: var(--fs-7);
+    line-height: 1.5;
+}
