@@ -531,3 +531,10 @@ header .container {
     line-height: 1.5;
 }
 
+/* explore services styles */
+
+.explore-service {
+    background: var(--eerie-black-2);
+    padding: 60px 0;
+}
+
