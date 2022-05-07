@@ -538,3 +538,122 @@ header .container {
     padding: 60px 0;
 }
 
+/* top vendors  styles*/
+
+.top-vendor {
+    padding: 60px 0;
+}
+
+.top-vendor-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 5px;
+}
+
+.top-vendor-title span {
+    color: var(--golden-puppy);
+}
+
+.top-vendor-title ion-icon {
+    margin-left: 10px;
+}
+
+.top-vendor-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.top-vendor-item {
+    background: var(--eerie-black-2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.top-vendor-card {
+    position: relative;
+    padding: 13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--onyx-2);
+    border-radius: 4px;
+}
+
+.top-vendor-card::before,
+.top-vendor-card::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    background: var(--sonic-silver);
+    transition: var(--transition);
+}
+
+.top-vendor-card::before {
+    width: 2px;
+    height: 37px;
+}
+
+.top-vendor-card::after {
+    width: 37px;
+    height: 2px;
+}
+
+.top-vendor-card:hover::before,
+.top-vendor-card:hover::after {
+    background: var(--golden-puppy);
+}
+
+.top-vendor .card-number {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--eerie-black-1);
+    font-size: var(--fs-10);
+    font-weight: var(--fw-700);
+    color: var(--onyx-2);
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    border: 7px solid var(--eerie-black-2);
+}
+
+.card-avatar {
+    position: relative;
+    border-radius: 50%;
+}
+
+.avatar-badge {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    background: var(--golden-puppy);
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-badge ion-icon {
+    --ionicon-stroke-width: 70px;
+}
+
+.top-vendor .card-title {
+    color: var(--quick-silver);
+    transition: var(--transition);
+}
+
+.top-vendor-card:hover .card-title {
+    color: var(--golden-puppy);
+}
+
+.top-vendor .card-content data {
+    color: var(--quick-silver);
+    font-size: var(--fs-10);
+}
