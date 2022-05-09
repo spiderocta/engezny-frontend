@@ -19,3 +19,16 @@ for (let i = 0; i < whishlistBtn.length; i++) {
     elemToggleFunc(this);
   });
 }
+
+
+// go to top functionality
+
+const goTopBtn = document.querySelector("[data-go-top]");
+// console.log(goTopBtn);
+window.addEventListener("scroll", function () {
+  if (this.window.scrollY >= 800) {
+    goTopBtn.classList.add("active");
+  } else {
+    goTopBtn.classList.remove("active");
+  }
+});
