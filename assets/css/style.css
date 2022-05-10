@@ -1063,7 +1063,13 @@ header .container {
         margin-bottom: 60px;
     }
 
-    
+    /* go to top button */
+        .go-top {
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+        }
+
 }
 
 /* styles for screens larger than 1200px */
