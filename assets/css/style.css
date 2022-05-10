@@ -1008,6 +1008,49 @@ header .container {
 
  }
 
+ /* styles for screens larger than 750px */
+
+ @media (min-width: 768px) {
+
+    :root {
+        --fs-1: 38px;
+        --fs-3: 35px;
+        --fs-7: 15px;
+        --fs-9: 14px;
+    }
+
+     .container {
+         max-width: 700px;
+     }
+     .btn {
+         padding: 14px 20px;
+     }
+
+     /* hero */
+    .hero {
+        padding: 100px 0;
+    }
+    .hero .container {
+        min-height: 70vh;
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 25px;
+    }
+
+    .hero-content {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .btn-group {
+        justify-content: flex-start;
+    }
+
+    
+}
+
 /* styles for screens larger than 1200px */
 
 @media (min-width: 1200px) {
