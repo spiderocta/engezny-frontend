@@ -1048,6 +1048,21 @@ header .container {
         justify-content: flex-start;
     }
 
+    /* newely added services */
+    .new-service,
+    .getting-started,
+    .explore-service,
+    .top-vendor,
+    .footer-top {
+        padding: 100px 0;
+    }
+
+    .section-header-wrapper,
+    .getting-started-title,
+    .top-vendor-title {
+        margin-bottom: 60px;
+    }
+
     
 }
 
