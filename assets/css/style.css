@@ -182,6 +182,10 @@ input,
     background: hsla(47, 100%, 45%, 0.1);
 }
 
+.wbtn{
+    width: 200px;
+}
+
 /* temp logo styles */
 .logo {
     width: 100%;
@@ -251,6 +255,9 @@ header .container {
     display: none;
 }
 
+.header-actions a>button {
+    color: var(--black);
+}
 /* hero styles  */
 .hero {
     padding: 60px 0;
@@ -840,6 +847,31 @@ header .container {
 .go-top:hover {
     --eerie-black-1: hsl(0, 0%, 20%);
 }
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* sign in styles */
+.auth-content {
+    height: 88vh;
+    /* background-color: var(--davys-gray); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 90px;
+}
+
+.auth-content .auth-content-body .vendor-form input{
+    background: var(--eerie-black-1);
+    color: var(--gray-web);
+    padding: 10px 15px;
+    border: 1px solid var(--onyx-1);
+    border-radius: 4px;
+    outline: none;
+}
+
+
+
 
 /* responsive design styles  */
 
