@@ -31,17 +31,27 @@
       </div>
     </header>
     
-    <div class="auth-content">
-        <div class="auth-content-head"><h1>Vendors login</h1></div>
-        <div class="auth-content-body">
-            <div class="notice-card">notice card</div>
-            <div class="vendor-form">
-                <form action="#">
-                    <input type="text" placeholder="Your email" />
-                </form>
+    <main>
+      <article>
+        <section class="auth-content">
+          <h1 class="h1 hero-title spaced">Vendors login</h1>
+          <div class="auth-content-body">
+            <div class="notice-card">
+              * Please Note * <br>
+              you can access web version of the vendor's portal using your registered mail on our app. <br>
+              please head to our FAQ page to learn more.
             </div>
-        </div>
-    </div>
+            <div class="vendor-form">
+              <form action="#">
+                <label for="email">* Please Enter Your registered Mail ID</label>
+                <input type="email" id="email" name="vEmail" placeholder="Your email" />
+                <input type="submit" value="Enter">
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
     
 </body>
 </html>
