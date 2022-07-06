@@ -21,7 +21,7 @@ const send = async function (amount) {
       params: [{
         from: accounts[0],
         // service address
-        to: "0x9202dD9d9307742F0F8B3296a086b46305ab5045",
+        to: "0xaBfB982621d05B4587e0a7AdfEEED85E42760ca7",
         value: web3.utils.toHex(wei)
       }]
     })
