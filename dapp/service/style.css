@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #0f0e13;
+        background-image:
+            radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+            radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+            radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main header{
+    height: 20vh;
+    /* background-color: aqua; */
+    /* color: goldenrod; */
+    font-size: 30px;
+    text-align: center;
+}
+main header h1{
+    font-size: 40px;
+    text-decoration: underline;
+    padding: 10px;
+    color: #FFF;
+}
+main header p{
+    margin-top: 20px;
+    color: #FFF;
+}
+
+main section .image{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+}
+main section .image img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+form {
+    bottom: 24px;
+    right: 24px;
+    max-width: var(--form-width);
+    text-align: center;
+    background: var(--form-back);
+    color: var(--form-fore);
+    padding: 24px;
+
+    display: grid;
+    grid-gap: 16px 8px;
+    grid-template-areas: "label label""input eth""button button";
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    display: none;
+    animation: fadein 0.4s 0.8s ease-in-out both;
+}
+
+form.has-eth {
+    display: grid;
+    animation: fadein 0.4s 0.8s ease-in-out both;
+}
+
+form label {
+    grid-area: label;
+    display: block;
+    font-size: 16px;
+    color: #FFF;
+}
+
+form input {
+    grid-area: input;
+    appearance: none;
+    width: 100%;
+    border: none;
+    padding: 8px;
+
+    font-variation-settings: "wght" 600;
+    text-align: right;
+
+    /* background: var(--form-back); */
+    color: darkolivegreen;
+    border: 1px solid var(--form-border);
+    transition: border-color 0.2s ease-in-out;
+}
+
+form input:focus {
+    border: 1px solid var(--form-fore);
+    outline: none;
+}
+
+form span {
+    grid-area: eth;
+    color: #FFF;
+}
+
+form button {
+    grid-area: button;
+    appearance: none;
+    border: 1px solid gold;
+    /* background: var(--form-fore); */
+    /* color: var(--form-back); */
+    font: inherit;
+    padding: 8px;
+    font-size: 16px;
+}
